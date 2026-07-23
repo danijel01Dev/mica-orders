@@ -1,0 +1,379 @@
+/* ========================= */
+/* RESET */
+/* ========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(180deg, #1a1d21 0%, #111315 100%);
+  color: white;
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+/* ========================= */
+/* APP */
+/* ========================= */
+
+.App {
+  display: flex;
+  gap: 35px;
+  padding: 35px;
+  min-height: 100vh;
+}
+
+/* ========================= */
+/* TITLE */
+/* ========================= */
+
+h1 {
+  text-align: center;
+  color: #ff9f1a;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+/* ========================= */
+/* FORM */
+/* ========================= */
+
+.form {
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+
+  background: #1f2328;
+
+  padding: 25px;
+
+  border-radius: 18px;
+
+  border: 1px solid #2d333b;
+
+  box-shadow:
+    0 10px 25px rgba(0,0,0,.45),
+    inset 0 1px 0 rgba(255,255,255,.03);
+
+  gap: 15px;
+}
+
+/* ========================= */
+/* INPUT */
+/* ========================= */
+
+.formInput {
+
+  height: 48px;
+
+  width: 100%;
+
+  padding: 0 15px;
+
+  background: #2a2f36;
+
+  color: white;
+
+  border: 1px solid #3b434d;
+
+  border-radius: 10px;
+
+  outline: none;
+
+  transition: .25s;
+}
+
+.formInput::placeholder{
+    color:#8d96a0;
+}
+
+.formInput:hover{
+    border-color:#707a84;
+}
+
+.formInput:focus{
+
+    border-color:#ff9f1a;
+
+    box-shadow:0 0 0 4px rgba(255,159,26,.18);
+}
+
+/* ========================= */
+/* SELECT */
+/* ========================= */
+
+select{
+
+    height:48px;
+
+    width:190px;
+
+    background:#2a2f36;
+
+    color:white;
+
+    border-radius:10px;
+
+    border:1px solid #3b434d;
+
+    padding:0 12px;
+
+    outline:none;
+
+    cursor:pointer;
+
+    transition:.2s;
+}
+
+select:hover{
+
+    border-color:#ff9f1a;
+}
+
+/* ========================= */
+/* BUTTON */
+/* ========================= */
+
+.dodaj{
+
+    height:48px;
+
+    margin-top:10px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#ff9f1a;
+
+    color:#141414;
+
+    font-weight:700;
+
+    font-size:15px;
+
+    transition:.2s;
+}
+
+.dodaj:hover{
+
+    cursor:pointer;
+
+    background:#ffb74d;
+
+    transform:translateY(-2px);
+
+    box-shadow:0 8px 18px rgba(255,159,26,.35);
+}
+
+.dodaj:active{
+
+    transform:scale(.98);
+}
+
+/* ========================= */
+/* CALENDAR */
+/* ========================= */
+
+.calendar{
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+    background:#1f2328;
+
+    border-radius:18px;
+
+    border:1px solid #2d333b;
+
+    padding:25px;
+
+    box-shadow:
+      0 10px 25px rgba(0,0,0,.45),
+      inset 0 1px 0 rgba(255,255,255,.03);
+}
+
+/* ========================= */
+/* HEADER */
+/* ========================= */
+
+.calHead{
+
+    display:flex;
+
+    align-items:center;
+
+    width:210px;
+
+    height:48px;
+
+   
+
+  
+
+    border-radius:10px;
+
+    padding-left:15px;
+
+    color:#d6d6d6;
+
+    margin-bottom:20px;
+}
+
+/* ========================= */
+/* CONTENT */
+/* ========================= */
+
+.content{
+
+    flex:1;
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    align-content:flex-start;
+
+    gap:18px;
+
+    padding:20px;
+
+    background:#17191d;
+
+    border-radius:14px;
+
+    border:1px solid #2b3138;
+
+    overflow-y:auto;
+}
+
+/* ========================= */
+/* CARD */
+/* ========================= */
+
+.card{
+
+    width:165px;
+
+    height:330px;
+
+    display:flex;
+
+    flex-direction: column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#2a2f36;
+
+    color:white;
+
+    border-radius:12px;
+
+    border:1px solid #3b434d;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.25s;
+    overflow-y: auto;
+}
+
+.card:hover{
+
+    cursor:pointer;
+
+    border-color:#ff9f1a;
+
+    background:#323840;
+
+    transform:translateY(-4px);
+
+    box-shadow:0 10px 20px rgba(0,0,0,.35);
+}
+
+/* ========================= */
+/* SCROLLBAR */
+/* ========================= */
+
+::-webkit-scrollbar{
+
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+
+    background:#1a1d21;
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#4d5560;
+
+    border-radius:50px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#ff9f1a;
+}
+.logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+
+  display: block;
+  margin: 0 auto 20px;
+
+  border-radius: 16px;
+
+  padding: 8px;
+
+  background: #2a2f36;
+
+  border: 1px solid #3b434d;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+
+  transition: 0.25s;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  border-color: #ff9800;
+}
+.preview{
+   width: 330px;
+   margin-top: 4%;
+  display: flex;
+  flex-direction: column;
+
+  background: #1f2328;
+
+  padding: 25px;
+
+  border-radius: 18px;
+
+  border: 1px solid #2d333b;
+
+  box-shadow:
+    0 10px 25px rgba(0,0,0,.45),
+    inset 0 1px 0 rgba(255,255,255,.03);
+
+  gap: 15px;
+}
+.order{
+  display: flex;
+  padding: 4px ;
+   border: 3px solid #1d1d1e;
+  margin: 4px;
+  border-radius: 13%;
+}
